@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+:root {
+    --bg-color: rgb(37, 36, 30);
+    --typewriterSpeed: 4s;
+    --typewriterCharacters: 28;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.home .text-container {
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background: var(--bg-color);
+}
+
+.home .text-container h1 {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+    position: relative;
+    width: max-content;
+    color: white;
+}
+
+.home .text-container h1::before,
+.home .text-container h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.home .text-container h1::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.home .text-container h1::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+        blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+.home .text-container .subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.nav {
+    height: 50px;
+    background: blue;
+}
+
+.nav div {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.nav ul {
+    position: absolute;
+    right: 5px;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: white;
+    padding: 5px
+}
+
+
+
+
+.about .about-content {
+    margin: 150px auto 0 auto;
+    width: 500px;
+}
+
+.about .about-content h1 {
+    text-align: center;
+    font-family: 'Roboto', monospace;
+    color: greenyellow;
+}
+
+.about .about-content p {
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+
+.services .services-content {
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+
+.services-content .card-container ul {
+    padding: 0;
+}
+
+.services-content .card-container ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    width: 300px
+}
+
+.services .services-content h1 {
+    font-family: 'Roboto', monospace;
+    color: red;
+}
+
+.services-content .card-container ul li p {
+    text-align: justify;
+    font-family: 'Roboto', monospace;
+    color: white;
+}
+
+.services-content .card-container h4 {
+    font-family: 'Roboto', monospace;
+    color: white;
+}
+
+
+.contact .contact-content {
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+
+.contact .contact-content h1 {
+    font-family: 'Roboto', monospace;
+    color: red;
+}
+
+.contact .contact-content .address-holder {
+    font-family: 'Lato', monospace;
+    color: white;
+}
