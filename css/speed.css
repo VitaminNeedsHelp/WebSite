@@ -2,10 +2,16 @@
 Typography
 --------------------------------------------------------------*/
 
+
+
 body, button, input, select, textarea {
     font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
     font-size: 18px;
     line-height: 1.5;
+    
+}
+body{
+    background-color: rgb(50, 50, 50);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -117,12 +123,8 @@ body {
     padding: 0 2em;
 }
 
-.test-wrapper {
-    border: 10px solid grey;
-    border-radius: 10px;
-}
-
 #origin-text {
+    border-radius: 10px;
     margin: 1em 0;
     padding: 1em 1em 0;
     background-color: #ededed;
@@ -139,6 +141,8 @@ body {
 
 .test-wrapper textarea {
     flex: 1;
+    resize: none;
+    border-radius: 10px;
 }
 
 .meta {
@@ -151,22 +155,27 @@ body {
 .timer {
     font-size: 3em;
     font-weight: bold;
+    color: #ffffff;
 }
 
 #reset {
-    padding: .5em 1em;
+    
+    height: 60px;
+    padding: 3px;
     font-size: 1.2em;
     font-weight: bold;
     color: #E95D0F;
-    background: white;
-    border: 10px solid #E95D0F;
+    background-color: #250093;
+    border: 10px solid #250093;
+    border-radius: 10px;
 }
-
 #reset:hover {
-    color: white;
     background-color: #E95D0F;
+    border: 10px solid #E95D0F;
+    color: #250093;
 }
 
 .errors {
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 20px;
 }
