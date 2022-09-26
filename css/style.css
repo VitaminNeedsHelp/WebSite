@@ -202,3 +202,7 @@ a:nth-child(4){
     font-family: 'Lato', monospace;
     color: white;
 }
+.contact .contact-content #test{
+    position: relative;
+    top: 500px;
+}
