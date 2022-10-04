@@ -6,7 +6,11 @@
         transform: rotate(360deg);
     }
 }
-    
+
+body{
+    background-color: #25241E;
+}
+
 .donut-spinner {
     margin: auto;
     margin-top: 25%;
@@ -15,5 +19,5 @@
     border: 5px solid rgba(0,0,0,0.3);
     border-left-color: #7983ff;
     border-radius: 50%;
-    animation: donut-spinl 1.2s linear infinite;
+    animation: donut-spin 1.2s linear infinite;
 }
