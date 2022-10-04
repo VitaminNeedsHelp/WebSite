@@ -197,8 +197,18 @@ a:nth-child(4):hover~.animation {
 .contact .contact-content .address-holder {
     font-family: 'Lato', monospace;
     color: white;
+}   
+.contact .contact-content .test ul {
+    margin: auto 0 auto 0;
+    border: 0px solid black;
+    float: middle;
+    position: absolute;
+    bottom: 10px;
+    left: 41%;
 }
-.contact .contact-content #test {
-    position: relative;
-    top: 500px;
+
+.contact .contact-content .test ul li{
+    display: block;
+    float: left;
+    margin-right: 10px;
 }
