@@ -201,10 +201,9 @@ a:nth-child(4):hover~.animation {
 .contact .contact-content .test ul {
     margin: auto 0 auto 0;
     border: 0px solid black;
-    float: middle;
     position: absolute;
     bottom: 10px;
-    left: 41%;
+    left: 50rem
 }
 
 .contact .contact-content .test ul li{
