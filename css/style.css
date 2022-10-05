@@ -198,18 +198,23 @@ a:nth-child(4):hover~.animation {
     font-family: 'Lato', monospace;
     color: white;
 }   
+
+.contact .contact-content .test{
+    display: flex;
+    justify-content: center;
+}
+
 .contact .contact-content .test ul {
     margin: auto 0 auto 0;
     border: 0px solid black;
     position: absolute;
     bottom: 10px;
-    left: 43rem
 }
 
 .contact .contact-content .test ul li{
-    display: block;
-    float: left;
+    display: inline-block;
     margin-right: 10px;
+    list-style: none;
 }
 
 .contact .contact-content .test ul li a {
