@@ -206,7 +206,7 @@ a:nth-child(4):hover~.animation {
 
 .contact .contact-content .test ul {
     margin: auto 0 auto 0;
-    border: 0px solid black;
+    border: 0px solid;
     position: absolute;
     bottom: 10px;
 }
