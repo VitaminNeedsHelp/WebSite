@@ -173,16 +173,13 @@ a:nth-child(4):hover~.animation {
     width: 300px;
 }
 .services .services-content h1 {
-    font-family: 'Roboto', monospace;
     color: rgb(255,0,0);
 }
 .services-content .card-container ul li p {
     text-align: justify;
-    font-family: 'Roboto', monospace;
     color: white;
 }
 .services-content .card-container h4 {
-    font-family: 'Roboto', monospace;
     color: white;
 }
 .contact .contact-content {
