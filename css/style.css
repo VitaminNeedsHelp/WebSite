@@ -152,7 +152,6 @@ a:nth-child(4):hover~.animation {
 }
 .about .about-content h1 {
     text-align: center;
-    font-family: 'Roboto', monospace;
     color: greenyellow;
 }
 .about .about-content p {
@@ -191,7 +190,6 @@ a:nth-child(4):hover~.animation {
     text-align: center;
 }
 .contact .contact-content h1 {
-    font-family: 'Roboto', monospace;
     color: red;
 }
 .contact .contact-content .address-holder {
