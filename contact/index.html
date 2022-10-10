@@ -4,20 +4,29 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <title>vitamin</title>
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
     <div class="contact">
         <!--Navbar-->
         <div class="nav">
-                <a href="../">Home</a>
-                <a href="../about/">About</a>
-                <a href="../services/">Services</a>
-                <a href="#">Contact</a>
-                <div class="animation start-contact"></div>
+            <a href="../">Home</a>
+            <a href="../about/">About</a>
+            <a href="../services/">Services</a>
+            <a href="#">Contact</a>
+            <div class="animation start-contact"></div>
         </div>
         <div class="contact-content">
             <h1>Contact me KekW</h1>
@@ -33,9 +42,15 @@
             </div>
             <div class="test">
                 <ul>
-                    <li><a href="./speed/"><h4>Typing Speed Test</h4></a></li>
-                    <li><a href="./donut/"><h4>Donut</h4></a></li>
-                    <li><a href="https://chrisi.netlify.app"><h4>Chrisi</h4></a></li>
+                    <li><a href="./speed/">
+                            <h4>Typing Speed Test</h4>
+                        </a></li>
+                    <li><a href="./donut/">
+                            <h4>Donut</h4>
+                        </a></li>
+                    <li><a href="https://chrisi.netlify.app">
+                            <h4>Chrisi</h4>
+                        </a></li>
                 </ul>
             </div>
         </div>
