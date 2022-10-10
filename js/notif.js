@@ -1,16 +1,37 @@
-const button = document.querySelector("#button");
+window.addEventListener('load', () => {
 
-button.addEventListener("click", () => {
-    Notification.requestPermission().then(perm => {
-        if (perm === "granted") {
-            const notif = new Notification("Hello", {
-                body: "This is a notification",
-                data: {hello: "world"},
-            })
+    const button = document.querySelector('button');
 
-            notif.addEventListener("close", e => {
-                console.log(e);
-            })
+    button.addEventListener("click", () => {
+        Notification.requestPermission().then(perm => {
+            if (perm === "granted") {
+                const notification = new Notification("Welcome, IT WORKED", {
+                    body: Math.random(),
+                    data: { hello: "world" },
+                    icon: "/img/favicon.png",
+                    
+                });
+
+                notification.addEventListener("close", e => {
+                    console.log(e);
+                });
+            }
+        });
+    });
+    let notification
+    let interval
+    document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "hidden") {
+            const leaveDate = new Date()
+            interval = setInterval(() => {
+                notification = new Notification("Come back please", {
+                    body: `You have been gone for ${Math.round((new Date() - leaveDate) / 1000)} seconds`,
+                    tag: "Come Back"
+                })
+            }, 100);
+        } else {
+            if (interval) clearInterval(interval)
+            if (notification) notification.close()
         }
-    })
-})
+    });
+});

@@ -184,7 +184,7 @@ button:hover .circle {
     width: 100%;
 }
 button:hover .circle .icon.arrow {
-    background: #fff;
+    background: rgb(255, 255, 255);
     transform: translate(0.6rem, 0);
 }
 button:hover .button-text {
