@@ -92,8 +92,8 @@ function reset() {
 
     testArea.value = "";
     theTimer.innerHTML = "00:00:00";
-    testWrapper.style.borderColor = "grey";
-    theTimer.style.color = "black";
+    testWrapper.style.borderColor = "282828";
+    theTimer.style.color = "white";
 
     randomWordNumber = Math.floor((Math.random() * 16) + 0);
     document.querySelector("#origin-text p").innerHTML = wordsList[randomWordNumber];
