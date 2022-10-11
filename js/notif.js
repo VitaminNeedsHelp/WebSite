@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-    const button = document.querySelector('button');
+    const button = document.querySelector('.glow-on-hover');
 
     button.addEventListener("click", () => {
         Notification.requestPermission().then(perm => {
@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
                     
                 });
 
-                notification.addEventListener("close", e => {
+                notification.addEventListener("show", e => {
                     console.log(e);
                 });
             }
