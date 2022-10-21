@@ -162,7 +162,8 @@ a:nth-child(4):hover~.animation {
 
 .about .about-content {
     margin: 150px auto 0;
-    width: 500px;
+    width: 400px;
+    padding: 10px;
 }
 
 .about .about-content h1 {
@@ -171,9 +172,13 @@ a:nth-child(4):hover~.animation {
 }
 
 .about .about-content p {
-    text-align: justify;
-    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-family: 'Roboto', monospace;
     color: white;
+}
+.about .about-content a{
+    color: #D0ADF0;
+    text-decoration: none;
 }
 
 .services .services-content {
