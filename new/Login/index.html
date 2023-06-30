@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="de-AT">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta charset="utf-8"/>
+<html lang="en">
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <meta charset="utf-8" />
         <title>Login</title>
-        <link rel="icon" type="image/png" href="/img/favicon.png"/>
-        <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+        <link rel="icon" type="image/png" href="/img/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="../css/login.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <form>
-                <label for="username">Username:</label>
-                <input type="text" id="username" placeholder="Username here..."/>
-                <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="Password here..."/>
-                <button>Login</button>
-            </form>
-            <div class="ear-l"></div>
-            <div class="ear-r"></div>
-            <div class="panda-face">
-                <div class="blush-l"></div>
-                <div class="blush-r"></div>
-                <div class="eye-l">
-                    <div class="eyeball-l"></div>
-                </div>
-                <div class="eye-r">
-                    <div class="eyeball-r"></div>
-                </div>
-                <div class="nose"></div>
-                <div class="mouth"></div>
+</head>
+
+<body>
+    <button onclick="history.back()" class="learn-more">
+        <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+        </span>
+        <span class="button-text">Back</span>
+    </button>
+    <div class="container">
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Username here..." />
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password here..." />
+            <button>Login</button>
+        </form>
+        <div class="ear-l"></div>
+        <div class="ear-r"></div>
+        <div class="panda-face">
+            <div class="blush-l"></div>
+            <div class="blush-r"></div>
+            <div class="eye-l">
+                <div class="eyeball-l"></div>
             </div>
-            <div class="paw-l"></div>
-            <div class="hand-r"></div>
-            <div class="paw-l"></div>
-            <div class="paw-r"></div>
+            <div class="eye-r">
+                <div class="eyeball-r"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
         </div>
-        <script src="../js/login.js"></script>
-    </body>
+        <div class="hand-l"></div>
+        <div class="hand-r"></div>
+        <div class="paw-l"></div>
+        <div class="paw-r"></div>
+    </div>
+    <!-- Script -->
+    <script src="../js/login.js"></script>
+</body>
+
 </html>
