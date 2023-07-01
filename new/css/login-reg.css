@@ -1,0 +1,56 @@
+:root {
+	--bg-color: rgb(37, 36, 30);
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	background-color: var(--bg-color);
+	font-family: 'Roboto Mono', monospace;
+}
+
+.login-reg {
+	margin: 0;
+	font-family: 'Source Code Pro', monospace;
+	min-height: 100vh;
+	display: block;
+	align-items: center;
+	text-align: center;
+	background: var(--bg-color);
+}
+
+.login-reg h2 {
+	font-size: clamp(1rem, 3vw + 1rem, 4rem);
+	font-family: 'Roboto Mono', monospace;
+	color: white;
+}
+
+.login-reg p {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 1.5rem;
+}
+
+button {
+	margin: 12px;
+	height: 50px;
+	width: 120px;
+	border-radius: 10px;
+	background: #333;
+	justify-content: center;
+	align-items: center;
+	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+		inset -5px -5px 10px #222;
+	font-family: 'Source Code Pro', monospace;
+	border: none;
+	font-size: 16px;
+	color: rgb(161, 161, 161);
+	transition: 500ms;
+}
+
+button:hover {
+	box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+		inset -5px -5px 10px #444;
+	color: #d6d6d6;
+	transition: 500ms;
+}
